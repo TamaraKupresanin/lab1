@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/RA 93-2016/lab1/projects/1_basic/clk_counter.xst" -ofn "D:/RA 93-2016/lab1/projects/1_basic/clk_counter.syr" 
+xst -intstyle ise -ifn "D:/RA 93-2016/lab1/projects/1_basic/clk_counter.xst" -ofn "D:/RA 93-2016/lab1/projects/1_basic/clk_counter.syr" 
+xst -intstyle ise -ifn "D:/RA 93-2016/lab1/projects/1_basic/clk_counter.xst" -ofn "D:/RA 93-2016/lab1/projects/1_basic/clk_counter.syr" 
+xst -intstyle ise -ifn "D:/RA 93-2016/lab1/projects/1_basic/clk_counter.xst" -ofn "D:/RA 93-2016/lab1/projects/1_basic/clk_counter.syr" 
+xst -intstyle ise -ifn "D:/RA 93-2016/lab1/projects/1_basic/clk_counter.xst" -ofn "D:/RA 93-2016/lab1/projects/1_basic/clk_counter.syr" 

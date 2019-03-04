@@ -1,0 +1,46 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Resolving generics for 'dcm27_to_50'...
+WARNING:sim - A core named 'dcm27_to_50' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'dcm27_to_50'...
+Delivering associated files for 'dcm27_to_50'...
+WARNING:sim - Component clk_wiz_v3_6 does not have a valid model name for
+   Verilog synthesis
+Delivering EJava files for 'dcm27_to_50'...
+Delivered 3 files into directory D:/RA
+93-2016/lab1/projects/1_basic/ipcore_dir/tmp/_cg/dcm27_to_50
+Delivered 1 file into directory D:/RA
+93-2016/lab1/projects/1_basic/ipcore_dir/tmp/_cg/dcm27_to_50
+Generating ASY schematic symbol...
+Loading device for application Rf_Device from file '6slx45.nph' in environment
+C:\Xilinx\14.6\ISE_DS\ISE\.
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'dcm27_to_50'...
+Generating ISE project...
+XCO file found: dcm27_to_50.xco
+XMDF file found: dcm27_to_50_xmdf.tcl
+Adding D:/RA 93-2016/lab1/projects/1_basic/ipcore_dir/tmp/_cg/dcm27_to_50.asy
+-view all -origin_type imported
+Adding D:/RA 93-2016/lab1/projects/1_basic/ipcore_dir/tmp/_cg/dcm27_to_50.ucf
+-view all -origin_type created
+Adding D:/RA 93-2016/lab1/projects/1_basic/ipcore_dir/tmp/_cg/dcm27_to_50.v
+-view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file "D:/RA
+   93-2016/lab1/projects/1_basic/ipcore_dir/tmp/_cg/dcm27_to_50.v" into library
+   work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding D:/RA 93-2016/lab1/projects/1_basic/ipcore_dir/tmp/_cg/dcm27_to_50.veo
+-view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/dcm27_to_50"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'dcm27_to_50'.

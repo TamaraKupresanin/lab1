@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/RA 93-2016/lab1/projects/1_basic/clk_gen.xst" -ofn "D:/RA 93-2016/lab1/projects/1_basic/clk_gen.syr" 

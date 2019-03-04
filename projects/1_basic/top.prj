@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/dcm27_to_50.v"
+vhdl work "src/rtl/timer_fsm.vhd"
+vhdl work "src/rtl/timer_counter.vhd"
+vhdl work "src/rtl/clk_gen.vhd"
+vhdl work "src/rtl/clk_counter.vhd"
+vhdl work "src/rtl/top.vhd"

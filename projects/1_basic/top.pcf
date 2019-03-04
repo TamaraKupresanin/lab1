@@ -1,0 +1,74 @@
+//! **************************************************************************
+// Written by: Map P.68d on Thu Feb 28 12:10:02 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "o_led<3>" LOCATE = SITE "L24" LEVEL 1;
+COMP "o_led<4>" LOCATE = SITE "L23" LEVEL 1;
+COMP "o_led<5>" LOCATE = SITE "K24" LEVEL 1;
+COMP "o_led<6>" LOCATE = SITE "H24" LEVEL 1;
+COMP "o_led<7>" LOCATE = SITE "D24" LEVEL 1;
+COMP "in_rst" LOCATE = SITE "AE24" LEVEL 1;
+COMP "i_sw<0>" LOCATE = SITE "W19" LEVEL 1;
+COMP "i_sw<1>" LOCATE = SITE "Y24" LEVEL 1;
+COMP "i_sw<2>" LOCATE = SITE "K19" LEVEL 1;
+COMP "i_sw<3>" LOCATE = SITE "V24" LEVEL 1;
+COMP "i_clk" LOCATE = SITE "M21" LEVEL 1;
+COMP "i_sw<4>" LOCATE = SITE "U20" LEVEL 1;
+COMP "i_sw<5>" LOCATE = SITE "U23" LEVEL 1;
+COMP "i_sw<6>" LOCATE = SITE "U24" LEVEL 1;
+COMP "i_sw<7>" LOCATE = SITE "U19" LEVEL 1;
+COMP "o_7_segm<0>" LOCATE = SITE "C17" LEVEL 1;
+COMP "o_7_segm<1>" LOCATE = SITE "C13" LEVEL 1;
+COMP "o_7_segm<2>" LOCATE = SITE "C11" LEVEL 1;
+COMP "o_7_segm<3>" LOCATE = SITE "C9" LEVEL 1;
+COMP "o_7_segm<4>" LOCATE = SITE "C7" LEVEL 1;
+COMP "o_7_segm<5>" LOCATE = SITE "D6" LEVEL 1;
+COMP "o_7_segm<6>" LOCATE = SITE "C6" LEVEL 1;
+COMP "in_btn<0>" LOCATE = SITE "AA23" LEVEL 1;
+COMP "in_btn<1>" LOCATE = SITE "AC23" LEVEL 1;
+COMP "in_btn<2>" LOCATE = SITE "AB24" LEVEL 1;
+COMP "in_btn<3>" LOCATE = SITE "AA24" LEVEL 1;
+COMP "in_btn<4>" LOCATE = SITE "AC24" LEVEL 1;
+COMP "o_led<0>" LOCATE = SITE "N24" LEVEL 1;
+COMP "o_led<1>" LOCATE = SITE "N23" LEVEL 1;
+COMP "o_led<2>" LOCATE = SITE "M24" LEVEL 1;
+TIMEGRP clk_gen_i_DMC_clkfx = BEL "clk_gen_i/dff" BEL
+        "timer_fsm_i/current_state_FSM_FFd2" BEL
+        "timer_fsm_i/current_state_FSM_FFd1" BEL
+        "clk_gen_i/shift_reg16/SRL16E" BEL "clk_gen_i/DMC/clkout1_buf" BEL
+        "clk_counter_i/counter_r_25" BEL "clk_counter_i/counter_r_24" BEL
+        "clk_counter_i/counter_r_23" BEL "clk_counter_i/counter_r_22" BEL
+        "clk_counter_i/counter_r_21" BEL "clk_counter_i/counter_r_20" BEL
+        "clk_counter_i/counter_r_19" BEL "clk_counter_i/counter_r_18" BEL
+        "clk_counter_i/counter_r_17" BEL "clk_counter_i/counter_r_16" BEL
+        "clk_counter_i/counter_r_15" BEL "clk_counter_i/counter_r_14" BEL
+        "clk_counter_i/counter_r_13" BEL "clk_counter_i/counter_r_12" BEL
+        "clk_counter_i/counter_r_11" BEL "clk_counter_i/counter_r_10" BEL
+        "clk_counter_i/counter_r_9" BEL "clk_counter_i/counter_r_8" BEL
+        "clk_counter_i/counter_r_7" BEL "clk_counter_i/counter_r_6" BEL
+        "clk_counter_i/counter_r_5" BEL "clk_counter_i/counter_r_4" BEL
+        "clk_counter_i/counter_r_3" BEL "clk_counter_i/counter_r_2" BEL
+        "clk_counter_i/counter_r_1" BEL "clk_counter_i/counter_r_0" BEL
+        "timer_counter_i/counter_value_r_7" BEL
+        "timer_counter_i/counter_value_r_6" BEL
+        "timer_counter_i/counter_value_r_5" BEL
+        "timer_counter_i/counter_value_r_4" BEL
+        "timer_counter_i/counter_value_r_3" BEL
+        "timer_counter_i/counter_value_r_2" BEL
+        "timer_counter_i/counter_value_r_1" BEL
+        "timer_counter_i/counter_value_r_0" BEL
+        "timer_fsm_i/current_state_FSM_FFd2_1";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN clk_gen_i/DMC/dcm_sp_inst_pins<2> = BEL "clk_gen_i/DMC/dcm_sp_inst"
+        PINNAME CLKIN;
+TIMEGRP i_clk_pin = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "clk_gen_i/DMC/dcm_sp_inst_pins<2>";
+TS_i_clk_pin = PERIOD TIMEGRP "i_clk_pin" 24 MHz HIGH 50%;
+TS_clk_gen_i_DMC_clkfx = PERIOD TIMEGRP "clk_gen_i_DMC_clkfx" TS_i_clk_pin *
+        2.08333333 HIGH 50%;
+PIN in_rst_pins<0> = BEL "in_rst" PINNAME PAD;
+PIN "in_rst_pins<0>" TIG;
+SCHEMATIC END;
+

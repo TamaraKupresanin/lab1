@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/dcm27_to_50.v"
+vhdl work "src/rtl/clk_gen.vhd"
